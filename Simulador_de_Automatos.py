@@ -17,8 +17,7 @@ class Automato:
         if (origem, simbolo) not in self.transicoes:
             self.transicoes[(origem, simbolo)] = set()
         self.transicoes[(origem, simbolo)].add(destino)
-
-
+        
     def definir_estado_inicial(self, estado):
         self.estado_atual = estado
 
